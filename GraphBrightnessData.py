@@ -68,8 +68,8 @@ def main(filepath, plotcycles, plotcurrent, plotbright, plotvolt, plotderiv):
     test_time = cycle_data['Test Time (h)']
 
     # Compute x-axis limits with margins
-    x_min = 0
-    x_max = test_time.max() * 1.02  # 2% margin on right
+    x_min = test_time.min() * 0.98  # 2% margin on the left
+    x_max = test_time.max() * 1.02  # 2% margin on the right
 
     fig, ax1 = plt.subplots(figsize=(8, 6))  # Adjusted size for better space management
     ax1.set_xlim(x_min, x_max)

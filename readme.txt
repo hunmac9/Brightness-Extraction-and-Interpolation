@@ -13,7 +13,7 @@ Create a project folder wherever you choose. This folder will contain the data f
 
 ## Step 4: Add data files
 
-Place the image_luminance.csv file and the excel echem file for the test within the project folder you created.
+Rename the CSV output file from the strain computer to image_luminance.csv, and place it with the excel echem file for the test within the project folder you created.
 
 ## Step 5: Run InterpolateData.py
 
@@ -61,3 +61,18 @@ This script graphs the smoothed versions of each column. To graph the non-smooth
 - The graph is saved as a PNG file with transparency, which is useful for documents or PowerPoint presentations, but this can be changed by modifying a few lines in the Python script.
 - The pop-up window is for quick analysis but may lack formatting by default. Use the configuration menu to adjust settings.
 - If an axis for one of the datasets is missing, expand the space on the side of the plot. You can zoom in, move the data, and use the save button at the bottom to save the plot image.
+
+## Step 10: Alternative Brightness Data Extraction
+
+If you are not using the strain computer to extract the brightness data, you can use the `brightnessExtract.py` script. To do this:
+
+1. Ensure all the image files are in one folder.
+2. Open the terminal in Visual Studio Code by pressing Ctrl + J.
+3. Run the script by typing:
+   python BrightnessExtract.py
+   or click the run button to start the GUI.
+4. In the GUI:
+   - Select the 'Input Directory', which is the folder containing the images.
+   - Select the project folder as the 'Output Directory'.
+   - Name the output file 'image_luminance'.
+   - Click 'Start Processing' and wait until the script has finished processing.
